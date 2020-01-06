@@ -7,7 +7,7 @@ import java.io.IOException;
 
 /**
  * @program: main_model
- * @description:
+ * @description: 通过XML的方式获取服务
  * @author: ShiYulong
  * @create: 2020-01-06 08:50
  **/

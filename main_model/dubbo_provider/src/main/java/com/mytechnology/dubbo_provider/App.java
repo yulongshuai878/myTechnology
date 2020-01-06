@@ -6,7 +6,7 @@ import java.io.IOException;
 
 /**
  * @program: main_model
- * @description:
+ * @description: 通过XML的方式暴露接口
  * @author: ShiYulong
  * @create: 2020-01-03 16:01
  **/
