@@ -17,6 +17,7 @@
     <modules>
         <module>common_model</module>
         <module>dubbo_provider</module>
+        <module>dubbo_consumer</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
