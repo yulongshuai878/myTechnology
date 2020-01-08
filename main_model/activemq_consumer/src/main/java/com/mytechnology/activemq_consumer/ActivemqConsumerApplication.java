@@ -1,13 +1,13 @@
-package com.mytechnology.common_model;
+package com.mytechnology.activemq_consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CommonModelApplication {
+public class ActivemqConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CommonModelApplication.class, args);
+        SpringApplication.run(ActivemqConsumerApplication.class, args);
     }
 
 }
