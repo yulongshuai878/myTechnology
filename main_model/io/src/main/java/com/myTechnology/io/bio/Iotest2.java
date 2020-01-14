@@ -1,4 +1,4 @@
-package com.myTechnology.io;
+package com.myTechnology.io.bio;
 
 import java.io.File;
 import java.io.FileInputStream;
