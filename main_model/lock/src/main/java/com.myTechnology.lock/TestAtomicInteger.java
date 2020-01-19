@@ -22,7 +22,7 @@ public class TestAtomicInteger {
 
     public static void main(String[] args) throws Exception {
         //开启1000个线程，并执行自增操作
-        for (int i = 0; i < 1000; ++i) {
+        for (int i = 0; i < 100000; ++i) {
             new Thread(()->{
                 try {
                     Thread.sleep(100);
