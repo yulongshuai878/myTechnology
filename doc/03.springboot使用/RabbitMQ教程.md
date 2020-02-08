@@ -195,3 +195,5 @@ AMQP当中有四个概念非常重要: 虚拟主机（virtual host），交换�
 
 Producer 要产生消息必须要创建一个 Exchange ，Exchange 用于转发消息，但是它不会做存储，如果没有 Queue bind 到 Exchange 的话，它会直接丢弃掉 Producer 发送过来的消息，当然如果消息总是发送过去就被直接丢弃那就没有什么意思了，一个 Consumer 想要接受消息的话，就要创建一个 Queue ，并把这个 Queue bind 到指定的 Exchange 上，然后 Exchange 会把消息转发到 Queue 那里，Queue 会负责存储消息，Consumer 可以通过主动 Pop 或者是 Subscribe 之后被动回调的方式来从 Queue 中取得消息。
 
+
+
