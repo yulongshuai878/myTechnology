@@ -23,6 +23,7 @@
         <module>activemq_topic</module>
         <module>io</module>
         <module>lock</module>
+        <module>annotation</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
