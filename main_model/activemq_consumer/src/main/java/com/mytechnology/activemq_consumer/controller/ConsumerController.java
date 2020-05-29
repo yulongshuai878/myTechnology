@@ -17,7 +17,7 @@ public class ConsumerController {
     /*
      * 监听和读取消息
      */
-    @JmsListener(destination="ylstone.queue")
+    @JmsListener(destination="springboot.queue")
     public void readActiveQueue(String message) {
         System.out.println("接受到：" + message);
         //TODO something

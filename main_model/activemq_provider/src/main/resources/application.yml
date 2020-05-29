@@ -1,7 +1,7 @@
 spring:
   activemq:
     #ActiveMQ通讯地址
-    broker-url: tcp://192.168.32.131:61616
+    broker-url: tcp://123.56.208.92:61616
     #用户名
     user: admin
     #密码

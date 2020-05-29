@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MqConsumer {
     // 使用JmsListener配置消费者监听的队列，其中name是接收到的消息
-    @JmsListener(destination = "ylstoneQueue")
+    @JmsListener(destination = "springboot.queue2",containerFactory = "jmsListenerContainerQueue")
     // SendTo 会将此方法返回的数据, 写入到 OutQueue 中去.
     @SendTo("SQueue")
     public String handleMessage(String name) {
