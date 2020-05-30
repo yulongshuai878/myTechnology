@@ -5,34 +5,25 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.2.RELEASE</version>
+        <version>2.3.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.myTechnology</groupId>
-    <artifactId>main_model</artifactId>
+    <artifactId>apollo_demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>main_model</name>
+    <name>apollo_demo</name>
     <description>Demo project for Spring Boot</description>
-    <modules>
-        <module>common_model</module>
-        <module>dubbo_provider</module>
-        <module>dubbo_consumer</module>
-        <module>activemq_provider</module>
-        <module>activemq_consumer</module>
-        <module>activemq_topic</module>
-        <module>io</module>
-        <module>lock</module>
-        <module>annotation</module>
-        <module>reflection</module>
-        <module>springcloud_demo</module>
-        <module>apollo_demo</module>
-    </modules>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -45,4 +36,14 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
