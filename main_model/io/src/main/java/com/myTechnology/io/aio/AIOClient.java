@@ -54,7 +54,6 @@ public class AIOClient {
         //下面这一段代码是只读数据
         final ByteBuffer bb = ByteBuffer.allocate(1024);
         client.read(bb, null, new CompletionHandler<Integer,Object>(){
-
                     //实现IO操作完成的方法
                     @Override
                     public void completed(Integer result, Object attachment) {
@@ -81,7 +80,7 @@ public class AIOClient {
     }
 
     public static void main(String args[])throws Exception{
-        int count = 10;
+        int count = 10000;
         final CountDownLatch latch = new CountDownLatch(count);
 
         for (int i = 0; i < count; i ++) {

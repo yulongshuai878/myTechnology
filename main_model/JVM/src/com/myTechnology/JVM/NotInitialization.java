@@ -8,6 +8,8 @@ package com.myTechnology.JVM;
  **/
 public class NotInitialization {
     public static void main(String[] args) {
+        Double ss = new Double(25/2);
+        System.out.println(ss);
         System.out.println(SubClass.value);
         /**
          *  output : SuperClass init!
@@ -15,7 +17,6 @@ public class NotInitialization {
          * 通过子类引用父类的静态对象不会导致子类的初始化
          * 只有直接定义这个字段的类才会被初始化
          */
-
         SuperClass[] sca = new SuperClass[10];
         /**
          *  output :
